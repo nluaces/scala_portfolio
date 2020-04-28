@@ -10,7 +10,6 @@ package workingwithlists
 
 object P01 extends App{
 
-
   def last(list: List[Int]):Int = list match {
     case List(x) => x
     case x::xs => last(xs)
