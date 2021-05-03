@@ -8,11 +8,12 @@ package lists
     res0: Int = 8
   */
 
-object P01 extends App{
+object P01 {
 
-  def last(list: List[Int]):Int = list match {
-    case List(x) => x
-    case x::xs => last(xs)
+  def last(list: List[Int]): Int = list match {
+    case x::Nil => x
+    case _::tail => last(tail)
+    case _ => throw new NoSuchElementException
   }
 
 }
