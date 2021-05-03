@@ -1,4 +1,4 @@
-package workingwithlists
+package lists
 
 /**
   * P01 (*) Find the last element of a list.
